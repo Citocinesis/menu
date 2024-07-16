@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Servicios - Spa Relax</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Spa Relax</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bienvenidos a Spa Relax</h2>
+            <p>Descubre nuestros tratamientos para tu bienestar y relajación.</p>
+        </section>
+        <section id="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="service" onclick="showServiceDetails('masaje')">
+                <h3>Masaje Relajante</h3>
+                <img src="masaje.jpg" alt="Masaje Relajante">
+            </div>
+            <div class="service" onclick="showServiceDetails('facial')">
+                <h3>Tratamiento Facial</h3>
+                <img src="facial.jpg" alt="Tratamiento Facial">
+            </div>
+            <div class="service" onclick="showServiceDetails('manicura')">
+                <h3>Manicura y Pedicura</h3>
+                <img src="manicura.jpg" alt="Manicura y Pedicura">
+            </div>
+            <!-- Más servicios pueden ser agregados aquí -->
+        </section>
+        <section id="serviceDetails" style="display: none;">
+            <h2 id="serviceTitle"></h2>
+            <img id="serviceImage" src="" alt="">
+            <p id="serviceDescription"></p>
+            <button onclick="hideServiceDetails()">Volver a Servicios</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Spa Relax. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
